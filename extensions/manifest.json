@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "English Speech Extension",
+  "version": "0.0.23",
+  "description": "英文を読み上げしてくれる拡張機能",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "en-speech": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "英文を読み上げしてくれる拡張機能"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "scripting",
+    "commands"
+  ]
+}
